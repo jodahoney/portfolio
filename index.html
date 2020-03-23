@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="styles.css"> 
+
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- My JS -->
+    <script src="myscripts.js"></script>
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/99e0cf78cf.js" crossorigin="anonymous"></script>
+
+    <title>Hello, world!</title>
+
+  </head>
+  <body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#intro"><span class="accent-font">00.</span>  Intro</a></li>
+            <li><a href="#about"><span class="accent-font">01.</span>  About</a></li>
+            <li><a href="#projects"><span class="accent-font">02.</span>  Projects</a></li>
+            <li><a href="#education"><span class="accent-font">03.</span>  Education</a></li>
+            <li><a href="#contact"><span class="accent-font">04.</span>  Contact</a></li>
+            <li class="resume-link"><a href="/dehoney_resume_tech.pdf" target="_blank">Resume</a></li>
+        </ul>
+    </nav>
+    <div class="container-fluid">
+
+        <div class="content-container" id="intro">
+            <h5 class="accent-font small">Hello, my name is</h5>
+            <h1 class="bright-font big">Joseph Dehoney.</h1>
+            <h3>I am a Software Engineer and Full Stack Web Developer.</h3>
+            <p class="small">Currently based out of Miami, FL, I am in my gap period before I go on to pursue Computer Science in graduate school.</p>
+            <a href="dehoney_resume_tech.pdf" target="_blank">See my Resume</a>
+        </div>
+
+        <div class="content-container" id="about">
+            <h1 class="bright-font title"><span class="accent-font digit">01.</span> About Me</h1>
+            <div class="row">
+                <div class="text col-6">
+                    <p>Hello! My name is Joseph Dehoney and I am a Sofware Engineer.</p>   
+                    <p>I recently graduated from UC San Diego with a degree in International Business, however during my time there I also established a foundation in engineering and computer science disciplines.</p>
+                    <p>Since graduating, I have pursued further education in Computer Science and Software Engineering by way of online courses, personal projects, and starting a Post-Bacc degree in CS. Also, I plan to later go on to earn a masters degree in CS.</p>
+                    <h5 class="bright-font">Technologies I have been working with recently:</h5>
+                    <ul class="skills">
+                        <div class="row">
+                            <div class="col">
+                                <li>Python</li>
+                                <li>HTML5, (S)CSS</li>
+                                <li>JS (ES6)</li>
+                            </div>
+                            <div class="col">
+                                <li>Flask</li>
+                                <li>Django</li>
+                                <li>React</li>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                <div class="container img-sq col-6">
+                    <img src="images/kurtis_nathan_group - Copy.jpg">
+                    <div class="img-arrow">^</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-container" id="projects">
+            <h1 class="bright-font title"><span class="accent-font">02.</span> Projects</h1>
+            
+            <div class="row">
+                <div class="project-box">
+                    <div class="icon-row">
+                        <i class="fas fa-folder-open"></i>
+                        <a class="git-button" href="https://github.com/jodahoney/" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+
+                    <div class="project-title">
+                        <h3>Personal Website v1</h3>
+                    </div>
+                    <div class="project-info">
+                        <p>This website you are on currently!</p>
+                    </div>
+                    <div class="project-skills">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JQuery</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+
+        <div class="content-container" id="education">
+            <h1 class="bright-font title"><span class="accent-font">03.</span> Education</h1>
+            <div class="edu-card">
+                <div>
+                    <h3>University of California San Diego</h3>
+                    <div class="row" id="edu-row">
+                        <h4>International Business</h4>
+                        <p>Major gpa: 3.7</p>
+                    </div>
+                    
+                    <h5>Minor: History</h5>
+                    <h5>2015 - 2019</h5>
+                </div>
+            </div>
+            
+            <div class="courses-card">
+                <h3 class="bright-font" id="course-title">Relevant Coursework</h3>
+                <div class="tab">
+                    <button class="tablinks" onclick="openCourse(event, 'ucsd')" id="defaultOpen">UCSD</button>
+                    <button class="tablinks" onclick="openCourse(event, 'HarvardX')">HarvardX</button>
+                    <button class="tablinks" onclick="openCourse(event, 'misc')">Misc.</button>
+                </div>
+                
+                
+                <div id="ucsd" class="tabcontent">
+                    <h3>Undergraduate Courses</h3>
+                    <ul>
+                        <li>Python for Data Science</li>
+                        <li>Intro to Data Science</li>
+                        <li>Intro to Computer Science</li>
+                    </ul>
+                </div>
+    
+                <div id="HarvardX" class="tabcontent">
+                    <h3>Online Courses</h3>
+                    <ul>
+                        <li>CS50: Intro to Computer Science</li>
+                        <li>CS50: Web Programming with Python and Javascript</li>
+                    </ul>
+                </div>
+    
+                <div id="misc" class="tabcontent">
+                    <h5>MichiganX</h5>
+                    <ul>
+                        <li>Programming for Everybody</li>
+                    </ul>
+                    <h5>The Linux Foundation</h5>
+                    <ul>
+                        <li>Introduction to Linux</li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="content-container" id="contact">
+            <h1 class="bright-font title"><span class="accent-font">04.</span> Contact Me</h1>
+            <div class="contact">
+                <p>I am actively pursuing employment opportunities, so please feel free to message me!</p>
+                <div class="row contact-buttons">
+                    <a class="contact-button" href="mailto: josephdehoney@gmail.com" target="_blank">Email<i class="far fa-envelope"></i></a>
+                    <a class="contact-button" href="https://www.linkedin.com/in/jdehoney/" target="_blank">Linkedin<i class="fab fa-linkedin"></i></a>
+                </div>
+                           
+        </div>
+
+        
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+        function openCourse(evt, courseName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(courseName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+</body>
+</html>
