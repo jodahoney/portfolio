@@ -1,8 +1,9 @@
 // Primary colors of palette going from light (1) -> dark (4)
 $primary-1: #F9F7F7;
 $primary-2: #DBE2EF;
+$primary-25: #c0cde3;
 $primary-3: #3F72AF;
-$primary-4: #112D4E;
+$primary-4: #0d243f;
 $primary-5: black;
 
 $small-screen: 299px;
@@ -17,7 +18,66 @@ body {
     padding: 20px 20px 50px 20px;
 }
 
-.intro {
-    background-color: $primary-4;
-    color: $primary-2;
+#about {
+    .intro {
+        background-color: $primary-25;
+        color: $primary-4;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    background-color: #0d243f;
+    color: $primary-1;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#experience {
+    .work-exp {
+        .work-exp-item {
+            border-radius: 10px;
+            padding: 20px;
+            background-color: $primary-25;
+            .work-exp-task {
+                color: $primary-5;
+            }
+        }
+    }
+
+    .education {
+        .edu-items {
+            .edu-item {
+                border-radius: 10px;
+                padding: 20px;
+                color: $primary-5;
+                background-color: $primary-25;
+            }
+        }
+        
+    }
+}
+
+#projects {
+    .project {
+        border-radius: 10px;
+        padding: 20px;
+        color: $primary-5;
+        background-color: $primary-25;
+    }
+}
+
+#publications {
+    .pub-item {
+        border-radius: 10px;
+        padding: 20px;
+        color: $primary-5;
+        background-color: $primary-25;
+    }
+}
+
+#contact {
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    color: $primary-5;
+    background-color: $primary-25;
 }

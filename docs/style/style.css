@@ -7,7 +7,52 @@ body {
   padding: 20px 20px 50px 20px;
 }
 
-.intro {
-  background-color: #112D4E;
-  color: #DBE2EF;
+#about {
+  background-color: #0d243f;
+  color: #F9F7F7;
+  border-radius: 20px;
+  padding: 20px;
+}
+#about .intro {
+  background-color: #c0cde3;
+  color: #0d243f;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#experience .work-exp .work-exp-item {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #c0cde3;
+}
+#experience .work-exp .work-exp-item .work-exp-task {
+  color: black;
+}
+#experience .education .edu-items .edu-item {
+  border-radius: 10px;
+  padding: 20px;
+  color: black;
+  background-color: #c0cde3;
+}
+
+#projects .project {
+  border-radius: 10px;
+  padding: 20px;
+  color: black;
+  background-color: #c0cde3;
+}
+
+#publications .pub-item {
+  border-radius: 10px;
+  padding: 20px;
+  color: black;
+  background-color: #c0cde3;
+}
+
+#contact {
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  color: black;
+  background-color: #c0cde3;
 }/*# sourceMappingURL=style.css.map */
