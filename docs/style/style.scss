@@ -10,38 +10,14 @@ $large-screen: 300px;
 
 body {
     color: $primary-5;
+    background-color: $primary-2;
 }
 
-/* Left side fixed navbar */
-.navbar.sidebar {
-    height: 100vh;
-    width: 250px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #333;
-    color: $primary-1;
-  }
 .content {
-    margin-left: 250px; /* Match the width of the sidebar */
-    padding: 20px;
+    padding: 20px 20px 50px 20px;
 }
-  
-  /* Sticky top dropdown navbar */
-@media (max-width: $small-screen) {
-    .navbar.sidebar {
-      display: none !important; /* Hide sidebar for smaller screens */
-    }
-    .navbar.sticky-top {
-      display: block !important;
-    }
-}
-  
-@media (min-width: $large-screen) {
-    .navbar.sticky-top {
-      display: none; /* Hide sticky top navbar for larger screens */
-    }
-    .navbar.sidebar {
-        display: block; /* Show sidebar for larger screens */
-    }
+
+.intro {
+    background-color: $primary-4;
+    color: $primary-2;
 }

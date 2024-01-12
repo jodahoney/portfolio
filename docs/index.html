@@ -9,51 +9,264 @@
   </head>
   <body>
 
-    <!-- Left Side Fixed Navbar -->
-    <nav class="navbar sidebar">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
-        </li>
-        <!-- Add more sidebar items as needed -->
-      </ul>
-    </nav>
-
-    <!-- Sticky Top Dropdown Navbar -->
-    <nav class="navbar navbar-expand-md sticky-top d-md-none">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <!-- Add more navbar items as needed -->
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="">JD</a>
+        <!-- Button to toggle the navbar on small screens -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#publications">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
-    <!-- Page Content -->
-    <div class="content"> 
-      <h1>Hello, world!</h1>
-      <h2>My name is Joe Dehoney</h2>
+    <div class="content">
+
+      <section id="about">
+        <div class="intro">
+          <h1>Hello, world!</h1>
+          <h2>My name is Joe Dehoney</h2>
+
+          <h3>About Me:</h3>
+          <p>I am currently working at Stanford University as a Research Data Analyst. I am also affiliated with SRI International.</p>
+        </div>
+        <br>
+
+        <h3>Interests:</h3>
+        <p>Machine Learning, Deep Learning, Computer Vision, High Performance Computing, Data Science, Ambient Intelligence, and Medical Imaging Analysis.</p>
+        <br>
+
+        <div class="tech-skills-section">
+          <h3>Technical Skills:</h3>
+          <ul>
+            <li class="tech-skill-item">
+              Languages: Python, C++, SQL, Bash
+            </li>
+            <li class="tech-skill-item">
+              Libraries: Pandas, Numpy, Matplotlib
+            </li>
+            <li class="tech-skill-item">
+              AI/ML: PyTorch, Tensorflow, Keras 
+            </li>
+            <li class="tech-skill-item">
+              Parallelism: CUDA, OpenCL, OpenMP
+            </li>
+            <li class="tech-skill-item">
+              Tools: Airflow, AWS, Docker, Git, Jupyter, Kubernetes, Linux, REDCap, MySQL, MongoDB, Slurm, XNAT
+            </li>
+          </ul>
+        </div>
+        <br>
+
+        <h3>Resume/CV:</h3>
+        <!-- TODO: add link to resume -->
+        <p><a>Click Here</a> to download a copy of my resume</p>
+      </section>
+
+      <br>
+      <br>
+      
+      <section id="experience">
+        <div class="work-exp">
+          <h1>Work Experience:</h1>
+          <br>
+
+          <div class="work-exp-item">
+            <h3>Research Data Analyst</h3>
+            <h4>Computational Neuroscience Laboratory, Department of Psychiatry and Behavioral Sciences, Stanford University (05/2022 - Curr)</h4>
+            <h5>Responsibilities:</h5>
+            <ul>
+              <li class="work-exp-task">
+                Created data submission pipeline (incl. unit testing) to upload 10 years of neuroscience data to NIH repository
+              </li>
+              <li class="work-exp-task">
+                Invented tools for efficiently resolving data quality issues reducing resolution time by 80 percent
+              </li>
+              <li class="work-exp-task">
+                Aggregated data from multi-center studies by leveraging Python to harvest unstructured web content for use by lab researchers
+              </li>
+              <li class="work-exp-task">
+                Unified processing pipeline using containerization to enable deployments across different computing environments
+              </li>
+              <li class="work-exp-task">
+                Collaborate with researchers to curate datasets within REDCap to support longitudinal data analysis, and to facilitate development and evaluation of machine learning models
+              </li>
+              <li class="work-exp-task">
+                Report frequently to government officials and stakeholders about compliance of data collection and distribution
+              </li>
+              <li class="work-exp-task">
+                Administrate linux compute clusters (10 nodes) and storage servers (1 Petabyte)
+              </li>
+            </ul>
+          </div>
+          <br>
+
+          <div class="work-exp-item">
+            <h3>Product Manager</h3>
+            <h4>CoolWine, Santa Rosa CA (07/2019 - 04/2021)</h4>
+            <h5>Responsibilities:</h5>
+            <ul>
+              <li class="work-exp-task">
+                Assisted in design, fabrication, and deployment of industrial beverage coolant systems
+              </li>
+              <li class="work-exp-task">
+                Created the data pipeline and analysis for longitudinal equipment analysis
+              </li>
+            </ul>
+          </div>
+          <br>
+
+          <div class="work-exp-item">
+            <h3>Student Manager</h3>
+            <h4>UC San Diego Recreation, San Diego CA (05/2017 - 06/2019)</h4>
+            <h5>Responsibilities:</h5>
+            <ul>
+              <li class="work-exp-task">
+                Designed and maintained the inventory system for 6 facilities
+              </li>
+              <li class="work-exp-task">
+                Managed a team of 45 undergraduates, directing project creation, delegation, and supervising performance
+              </li>
+            </ul>
+          </div>
+          <br>
+
+          <div class="work-exp-item">
+            <h3>Team Lead</h3>
+            <h4>Permanent Value Inc., San Diego CA (07/2016 - 05/2018)</h4>
+            <h5>Responsibilities:</h5>
+            <ul>
+              <li class="work-exp-task">
+                Managed 60 client investment portfolios totaling over 15 million in assets
+              </li>
+              <li class="work-exp-task">
+                Proposed and implemented investment strategies and financial trades
+              </li>
+              <li class="work-exp-task">
+                Presented recommendations and analysis to the company founder on a weekly basis
+              </li>
+            </ul>
+          </div>
+          <br>
+        </div>
+        
+        <div class="education">
+          <h1>Education:</h1>
+          <br>
+
+          <div class="edu-item">
+            <h3>Oregon State University</h3>
+            <h5>BS in Computer Science; 01/2022 - 06/2023</h5>
+            <p>
+              GPA: 4.0 <br>
+              Awards: Summa Cum Laude, Dean's List, Engineering Scholarship
+            </p>
+          </div>
+
+          <div class="edu-item">
+            <h3>UC San Diego</h3>
+            <h5>BA in International Business, Minor in History; 09/2015 - 06/2019</h5>
+            <p>
+              GPA: 3.9 (Major), 3.2 (Cumulative) <br>
+              Awards: Provost Honors
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <br>
+      <br>
+
+      <section id="projects">
+        <h1>Projects</h1>
+        <br>
+
+        <!-- TODO: add github project links to each one once ready -->
+        <div class="project">
+          <h4>Deep Reinforcement Learning for Financial Trading</h4>
+          <ul>
+            <li>
+              Created a deep reinforcement learning model based on Deep Q-learning for trading cryptocurrencies.
+            </li>
+            <li>
+              Built a comprehensive data pipeline to collect, clean, and preprocess cryptocurrency market data.
+            </li>
+            <li>
+              Fine-tuned the model's hyperparameters and architecture through extensive experimentation and analysis.
+            </li>
+            <li>
+              Conducted thorough backtesting and performance evaluation to assess the model's effectiveness.
+            </li>
+            <li>
+              Integrated the model with cryptocurrency exchanges through API integration for live trading.
+            </li>
+            <li>
+              Documented the project's methodology, codebase, and results in a clear and concise manner.
+            </li>
+          </ul>
+        </div>
+        <br>
+
+        <div class="project">
+          <h4>Ecommerce Web Application</h4>
+          <ul>
+            <li>
+              Created with other members of the data science team from the OSU App Development Club an AI system for demand forecasts of products
+            </li>
+            <li>
+              Programmed models in PyTorch library.
+            </li>
+          </ul>
+        </div>
+
+      </section>
+      
+      <br>
+      <br>
+
+      <section id="publications">
+        <h1>Publications</h1>
+        <br>
+
+        <div class="pub-item">
+          <p>Qingyu Zhao, Magdalini Paschali, Joseph Dehoney,  et al., Career Path Matters for Identifying High School Risk Factors that Forecast Heavy Drinking in Young Adulthood: Under Review (2023)
+          </p>
+        </div>
+        <br>
+
+        <div class="pub-item">
+          <p>Lauren Kupis, Zachary T Goodman, Salome Kornfeld, Stephanie Hoang, Celia Romero, Bryce Dirks, Joseph Dehoney, et al., Brain Dynamics Underlying Cognitive Flexibility Across the Lifespan, Cerebral Cortex, Volume 31, Issue 11, November 2021, Pages 5263–5274
+          </p>
+        </div>
+      </section>
+
+      <br>
+      <br>
+
+      <section id="contact">
+        <h1>Contact Me</h1>
+        <h5>Email: josephdehoney [AT] gmail [DOT] com</h5>
+      </section>
     </div>
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

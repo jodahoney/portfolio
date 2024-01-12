@@ -1,37 +1,13 @@
 body {
   color: black;
-}
-
-/* Left side fixed navbar */
-.navbar.sidebar {
-  height: 100vh;
-  width: 250px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #333;
-  color: #F9F7F7;
+  background-color: #DBE2EF;
 }
 
 .content {
-  margin-left: 250px; /* Match the width of the sidebar */
-  padding: 20px;
+  padding: 20px 20px 50px 20px;
 }
 
-/* Sticky top dropdown navbar */
-@media (max-width: 299px) {
-  .navbar.sidebar {
-    display: none !important; /* Hide sidebar for smaller screens */
-  }
-  .navbar.sticky-top {
-    display: block !important;
-  }
-}
-@media (min-width: 300px) {
-  .navbar.sticky-top {
-    display: none; /* Hide sticky top navbar for larger screens */
-  }
-  .navbar.sidebar {
-    display: block; /* Show sidebar for larger screens */
-  }
+.intro {
+  background-color: #112D4E;
+  color: #DBE2EF;
 }/*# sourceMappingURL=style.css.map */
