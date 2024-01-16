@@ -19,6 +19,9 @@ body {
   border-radius: 10px;
   padding: 10px;
 }
+#about a {
+  color: #F9F7F7;
+}
 
 #experience .work-exp .work-exp-item {
   border-radius: 10px;
