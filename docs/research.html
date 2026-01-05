@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research — Joseph Dehoney</title>
+  <meta name="description" content="Joseph Dehoney — Quantum information & computing, quantum complexity, and learning in many-body physics.">
+  <link rel="stylesheet" href="assets/main.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="profile">
+      <div class="avatar" aria-hidden="true">JD</div>
+      <h1>Joseph Dehoney</h1>
+      <p class="tagline">M.S. Computer Science @ Stanford (2024–2026) • Quantum Information & Computing</p>
+      <ul class="meta">
+        <li>📍 Stanford, CA</li>
+        <li>✉️ <a href="mailto:jdehoney@stanford.edu">jdehoney@stanford.edu</a></li>
+        <li>🔗 <a href="https://github.com/jodahoney">GitHub</a> • <a href="https://linkedin.com/in/jdehoney">LinkedIn</a></li>
+        <li>📄 <a href="resources/jdehoney_cv.pdf">CV (PDF)</a></li>
+      </ul>
+    </div>
+    <nav class="nav" aria-label="Site">
+      <a href="index.html" class="">About</a>
+<a href="research.html" class="active">Research</a>
+<a href="publications.html" class="">Publications</a>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <div class="container">
+      <h1 class="page-title">Research</h1>
+<p class="lead">A few projects and course reports. If you’d like to see a draft or slide deck that isn’t yet public, feel free to email me.</p>
+
+<div class="section" id="qcma-kronecker">
+  <h2>QCMA containment for Kronecker coefficient positivity (in preparation)</h2>
+  <p>
+  <strong>Goal.</strong> Understand whether hard instances of Kronecker coefficient positivity admit succinct,
+  efficiently checkable witnesses—i.e., whether some natural formulations can be placed in a class with short classical proofs rather than fully quantum proofs.
+  </p>
+  <ul class="bullets">
+    <li><strong>What I did:</strong> surveyed and reframed the problem across multiple representation-theoretic settings; built a SageMath toolkit to compute Kronecker coefficients and related data to test candidate witness families.</li>
+    <li><strong>Technical result:</strong> extended a known hardness result for certain 2-point correlation functions to a 3-point setting.</li>
+    <li><strong>Next:</strong> systematize witness families and stress-test conjectures across bases and growing <em>n</em>.</li>
+  </ul>
+  <div class="badges">
+    <span class="badge">QCMA / verification</span>
+    <span class="badge">Kronecker coefficients</span>
+    <span class="badge">SageMath experiments</span>
+  </div>
+</div>
+
+<div class="section" id="gibbs-learning">
+  <h2>Learning Quantum Gibbs States Locally &amp; Efficiently (report)</h2>
+  <p>
+  <strong>Question.</strong> When is local Hamiltonian learning from thermal (Gibbs) data identifiable, and what are the sample/time complexity tradeoffs?
+  </p>
+  <ul class="bullets">
+    <li><strong>Core idea:</strong> link a Gibbs-state inner product to exponential clustering and finite-temperature Lieb–Robinson locality.</li>
+    <li><strong>Analysis:</strong> compare against classical Markov random field learning; reproduce variance bounds; characterize failure regimes (operator spreading / low temperature).</li>
+  </ul>
+  <div class="badges">
+    <span class="badge">Quantum learning</span>
+    <span class="badge">Thermal states</span>
+    <span class="badge">Spring 2025</span>
+  </div>
+</div>
+
+<div class="section" id="rydberg-mis">
+  <h2>Quantum Optimization of MIS with Rydberg Atom Arrays (course presentation)</h2>
+  <ul class="bullets">
+    <li>Built a slide deck that synthesizes a key result on solving Max Independent Set with Rydberg-atom arrays, emphasizing the mapping from unit-disk graphs to blockade constraints.</li>
+    <li>Explained how the paper's control knobs (Rabi frequency, detuning schedules, pulse shaping) realize analog/adiabatic and QAOA-style approaches, and where hardware constraints enter.</li>
+    <li>Connected the method to course themes in quantum control &amp; engineering.</li>
+  </ul>
+  <div class="badges">
+    <span class="badge">Rydberg</span>
+    <span class="badge">Combinatorial optimization</span>
+    <span class="badge">Quantum control</span>
+  </div>
+</div>
+
+
+<div class="section" id="pytorch-geometric">
+  <h2>Scaling PyG: Taming Massive Graphs (article + colab)</h2>
+  <ul class="bullets">
+    <li>Enabled memory-safe GNN training on commodity GPUs with neighbor/hierarchical sampling and distributed loaders in PyG.</li>
+    <li>Assessed accuracy–time–memory trade-offs and released a minimal reproducible template with throughput metrics.</li>
+  </ul>
+  <div class="badges">
+    <span class="badge">Research engineering</span>
+    <span class="badge">PyTorch Geometric</span>
+    <span class="badge">Fall 2025</span>
+  </div>
+</div>
+      <div class="footer">© 2026 Joseph Dehoney • Hosted on GitHub Pages.</div>
+    </div>
+  </main>
+</div>
+</body>
+</html>
