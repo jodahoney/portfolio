@@ -124,6 +124,14 @@ small{ color: var(--muted); }
   font-size: 18px;
 }
 
+.subheading{
+  margin: 14px 0 6px 0;
+  font-size: 14px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
 .lead{
   font-size: 16px;
   margin-top: 0;

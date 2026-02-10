@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Research — Joseph Dehoney</title>
-  <meta name="description" content="Joseph Dehoney — Quantum information & computing, quantum complexity, and learning in many-body physics.">
+  <meta name="description" content="Joseph Dehoney — machine learning (theory, systems, applications), quantum information theory, and research at their intersection.">
   <link rel="stylesheet" href="assets/main.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
     <div class="profile">
       <div class="avatar" aria-hidden="true">JD</div>
       <h1>Joseph Dehoney</h1>
-      <p class="tagline">M.S. Computer Science @ Stanford (2024–2026) • Quantum Information & Computing</p>
+      <p class="tagline">M.S. Computer Science @ Stanford (2024–2026) • Machine Learning + Quantum Information</p>
       <ul class="meta">
         <li>📍 Stanford, CA</li>
         <li>✉️ jdehoney [at] stanford [dot] edu</li>
@@ -31,7 +31,34 @@
   <main class="content">
     <div class="container">
       <h1 class="page-title">Research</h1>
-<p class="lead">A few projects and course reports. If you’d like to see a draft or slide deck that isn’t yet public, feel free to email me.</p>
+<p class="lead">A selection of projects across machine learning theory/systems/applications, quantum information theory, and the ML × quantum interface.</p>
+
+<div class="section">
+  <h2>Machine Learning (Theory, Systems, Applications)</h2>
+  <p>
+  My ML interests span theory, systems, and applications. I am especially interested in building reliable and scalable ML workflows for scientific datasets while grounding modeling choices in learning-theoretic principles.
+  </p>
+</div>
+
+<div class="section" id="pytorch-geometric">
+  <h2>Scaling PyG: Taming Massive Graphs (article + colab)</h2>
+  <ul class="bullets">
+    <li>Enabled memory-safe GNN training on commodity GPUs with neighbor/hierarchical sampling and distributed loaders in PyG.</li>
+    <li>Assessed accuracy-time-memory trade-offs and released a minimal reproducible template with throughput metrics.</li>
+  </ul>
+  <div class="badges">
+    <span class="badge">Research engineering</span>
+    <span class="badge">PyTorch Geometric</span>
+    <span class="badge">Fall 2025</span>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Quantum Information Theory</h2>
+  <p>
+  My quantum work focuses on complexity-theoretic boundaries, verification, and learning problems in many-body systems.
+  </p>
+</div>
 
 <div class="section" id="qcma-kronecker">
   <h2>QCMA containment for Kronecker coefficient positivity (in preparation)</h2>
@@ -51,22 +78,6 @@
   </div>
 </div>
 
-<div class="section" id="gibbs-learning">
-  <h2>Learning Quantum Gibbs States Locally &amp; Efficiently (report)</h2>
-  <p>
-  <strong>Question.</strong> When is local Hamiltonian learning from thermal (Gibbs) data identifiable, and what are the sample/time complexity tradeoffs?
-  </p>
-  <ul class="bullets">
-    <li><strong>Core idea:</strong> link a Gibbs-state inner product to exponential clustering and finite-temperature Lieb–Robinson locality.</li>
-    <li><strong>Analysis:</strong> compare against classical Markov random field learning; reproduce variance bounds; characterize failure regimes (operator spreading / low temperature).</li>
-  </ul>
-  <div class="badges">
-    <span class="badge">Quantum learning</span>
-    <span class="badge">Thermal states</span>
-    <span class="badge">Spring 2025</span>
-  </div>
-</div>
-
 <div class="section" id="rydberg-mis">
   <h2>Quantum Optimization of MIS with Rydberg Atom Arrays (course presentation)</h2>
   <ul class="bullets">
@@ -81,17 +92,27 @@
   </div>
 </div>
 
+<div class="section">
+  <h2>Intersection: ML × Quantum</h2>
+  <p>
+  I am particularly interested in research problems where machine learning and quantum information meet:
+  learning physically structured systems, matching sample complexity bounds to practical algorithms, and understanding robustness under realistic noise.
+  </p>
+</div>
 
-<div class="section" id="pytorch-geometric">
-  <h2>Scaling PyG: Taming Massive Graphs (article + colab)</h2>
+<div class="section" id="gibbs-learning">
+  <h2>Learning Quantum Gibbs States Locally &amp; Efficiently (report)</h2>
+  <p>
+  <strong>Question.</strong> When is local Hamiltonian learning from thermal (Gibbs) data identifiable, and what are the sample/time complexity tradeoffs?
+  </p>
   <ul class="bullets">
-    <li>Enabled memory-safe GNN training on commodity GPUs with neighbor/hierarchical sampling and distributed loaders in PyG.</li>
-    <li>Assessed accuracy–time–memory trade-offs and released a minimal reproducible template with throughput metrics.</li>
+    <li><strong>Core idea:</strong> link a Gibbs-state inner product to exponential clustering and finite-temperature Lieb–Robinson locality.</li>
+    <li><strong>Analysis:</strong> compare against classical Markov random field learning; reproduce variance bounds; characterize failure regimes (operator spreading / low temperature).</li>
   </ul>
   <div class="badges">
-    <span class="badge">Research engineering</span>
-    <span class="badge">PyTorch Geometric</span>
-    <span class="badge">Fall 2025</span>
+    <span class="badge">Quantum learning</span>
+    <span class="badge">Thermal states</span>
+    <span class="badge">Spring 2025</span>
   </div>
 </div>
       <div class="footer">© 2026 Joseph Dehoney • Hosted on GitHub Pages.</div>

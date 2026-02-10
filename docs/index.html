@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About — Joseph Dehoney</title>
-  <meta name="description" content="Joseph Dehoney — Quantum information & computing, quantum complexity, and learning in many-body physics.">
+  <meta name="description" content="Joseph Dehoney — machine learning (theory, systems, applications), quantum information theory, and research at their intersection.">
   <link rel="stylesheet" href="assets/main.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
     <div class="profile">
       <div class="avatar" aria-hidden="true">JD</div>
       <h1>Joseph Dehoney</h1>
-      <p class="tagline">M.S. Computer Science @ Stanford (2024–2026) • Quantum Information & Computing</p>
+      <p class="tagline">M.S. Computer Science @ Stanford (2024–2026) • Machine Learning + Quantum Information</p>
       <ul class="meta">
         <li>📍 Stanford, CA</li>
         <li>✉️ jdehoney [at] stanford [dot] edu</li>
@@ -36,28 +36,44 @@
 Hello, I am Joseph Dehoney, but I mostly go by Joe (or Joda depending on when we met).
 </p>
 <p class="lead">
-I'm a Stanford M.S. CS student working at the intersection of <strong>quantum information</strong>,
-<strong>quantum complexity</strong>, and <strong>learning problems in physics</strong>.
+I'm a Stanford M.S. CS student with a machine learning background spanning <strong>theory, systems, and applications</strong>.
+I enjoy building practical ML systems end-to-end while grounding decisions in principled learning objectives.
 <br>
-My research aims to understand which tasks in quantum information and complexity can be solved efficiently, which are provably hard, and how structural features mediate the gap between them. 
-Many of the problems I am drawn to take the form of learning properties of a system and then matching information-theoretic limits with concrete algorithms. 
-In the long run, I hope this perspective will help identify which problems are truly amenable to efficient quantum or classical methods and inform the design of reliable computational tools for science and engineering.
+I also have a research background in <strong>quantum information theory</strong> and <strong>quantum complexity</strong>,
+with an emphasis on mathematically rigorous analysis of computational limits, verification, and learnability in structured physical systems.
+<br>
+I am especially interested in the <strong>intersection of ML and quantum</strong>: where learning methods
+meet information-theoretic limits, and where structure can turn hard scientific problems into tractable
+algorithms.
 </p>
 
 <div class="section">
   <h2>Research interests</h2>
-  My research has gone in a couple different directions in the past few years. Previously, my work was in medical machine learning.
-  Now, in conjunction with maintaining my past ML projects, my research revolves around trying to better understand the advantages and limitations of quantum computing. The following are a few central themes
-  that my recent research has pursued:
+  The main directions I am currently pursuing are:
+  <h3 class="subheading">Machine Learning (Theory, Systems, Applications)</h3>
   <ul class="bullets">
-    <li><strong>Verification & structure:</strong> when does mathematical structure or physical constraints allow for a quantum speedup?</li>
+    <li><strong>Learning theory perspective:</strong> emphasizing identifiability, generalization, and complexity-aware modeling choices.</li>
+    <li><strong>Robust ML systems:</strong> building reproducible data/model pipelines with strong validation and monitoring.</li>
+    <li><strong>Scalable training:</strong> distributed and memory-aware workflows for large multimodal and graph data.</li>
+    <li><strong>Applied scientific ML:</strong> using machine learning for biomedical and neuroimaging workflows.</li>
+  </ul>
+  <h3 class="subheading">Quantum Information Theory Research</h3>
+  <ul class="bullets">
+    <li><strong>Verification & structure:</strong> when does mathematical structure or physical constraints allow for quantum advantage?</li>
     <li><strong>Learning in many-body settings:</strong> identifiability and complexity of learning local Hamiltonians / Gibbs states from local data.</li>
-    <li><strong>Noise & robustness:</strong> stabilizing estimation and optimization under realistic noise models.</li>
+    <li><strong>Complexity boundaries:</strong> mapping efficient methods versus provably hard quantum tasks.</li>
+  </ul>
+  <h3 class="subheading">Intersection: ML × Quantum</h3>
+  <ul class="bullets">
+    <li><strong>Learning under physical constraints:</strong> designing estimation procedures that respect locality, noise, and measurement limits.</li>
+    <li><strong>Theory to practice:</strong> connecting information-theoretic guarantees to implementable algorithms.</li>
+    <li><strong>Scientific tooling:</strong> building reliable computational methods for physics and engineering research.</li>
   </ul>
 </div>
 
 <div class="section">
   <h2>Recent work</h2>
+  <h3 class="subheading">Quantum Information Theory</h3>
   <div class="cardlist">
     <div class="card">
       <h3>Towards QCMA containment for Kronecker coefficient positivity</h3>
@@ -68,17 +84,6 @@ In the long run, I hope this perspective will help identify which problems are t
         <span class="badge">In preparation (2025)</span>
       </div>
       <div class="links"><a class="btn" href="research.html#qcma-kronecker">Read more</a></div>
-    </div>
-
-    <div class="card">
-      <h3>Learning Quantum Gibbs States Locally &amp; Efficiently (report)</h3>
-      <p>Studied identifiability of local Hamiltonian learning from thermal data via a Gibbs-state inner product, exponential clustering, and Lieb–Robinson locality; analyzed sample/time complexity and failure regimes.</p>
-      <div class="badges">
-        <span class="badge">Hamiltonian learning</span>
-        <span class="badge">Many-body physics</span>
-        <span class="badge">Spring 2025</span>
-      </div>
-      <div class="links"><a class="btn" href="research.html#gibbs-learning">Read more</a></div>
     </div>
 
     <div class="card">
@@ -93,17 +98,45 @@ In the long run, I hope this perspective will help identify which problems are t
       </div>
       <div class="links"><a class="btn" href="research.html#rydberg-mis">Read more</a></div>
     </div>
-    
+
+  </div>
+
+  <h3 class="subheading">Machine Learning</h3>
+  <div class="cardlist">
+    <div class="card">
+      <h3>Scaling PyG: Taming Massive Graphs (article + colab)</h3>
+      <p>Built a memory-safe GNN training workflow with neighborhood/hierarchical sampling and distributed loaders in PyTorch Geometric, with reproducible throughput and accuracy tradeoff benchmarks.</p>
+      <div class="badges">
+        <span class="badge">ML systems</span>
+        <span class="badge">PyTorch Geometric</span>
+        <span class="badge">Fall 2025</span>
+      </div>
+      <div class="links"><a class="btn" href="research.html#pytorch-geometric">Read more</a></div>
+    </div>
+  </div>
+
+  <h3 class="subheading">Intersection: ML × Quantum</h3>
+  <div class="cardlist">
+    <div class="card">
+      <h3>Learning Quantum Gibbs States Locally &amp; Efficiently</h3>
+      <p>Combined quantum many-body structure with learning-theoretic analysis to characterize when local thermal data is sufficient for efficient Hamiltonian recovery.</p>
+      <div class="badges">
+        <span class="badge">ML theory</span>
+        <span class="badge">Quantum many-body</span>
+        <span class="badge">Spring 2025</span>
+      </div>
+      <div class="links"><a class="btn" href="research.html#gibbs-learning">Read more</a></div>
+    </div>
   </div>
 </div>
 
 <div class="section">
   <h2>Background</h2>
   <p>
-  Alongside quantum research, I build data pipelines at Stanford for multimodal biomedical and neuroimaging research datasets
+  I build data pipelines at Stanford for multimodal biomedical and neuroimaging research datasets
   (automation, CI validation, Slurm/Docker/AWS workflows). I enjoy the full lifecycle: from idea → implementation → results → writeup.
   </br>
-  Futher details on the outcomes of this work can be seen in my <a href="publications.html">publications</a> section.
+  Further details on the outcomes of this work can be seen in my <a href="publications.html">publications</a> section.
   </p>
 </div>
       <div class="footer">© 2026 Joseph Dehoney • Hosted on GitHub Pages.</div>
